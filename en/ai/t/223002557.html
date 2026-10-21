@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E5010 STARTING AND RECHARING - FUNCTIONAL DESCRIPTION · Fiat DOBLÒ</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5010 STARTING AND RECHARING &gt; E5010 STARTING AND RECHARING - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat DOBLÒ workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2582819.html">Electrical equipment</a> › <a href="2582820.html">1 ELECTRICAL FUNCTIONS</a> › <a href="2583125.html">E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS</a> › <a href="223002548.html">E5010 STARTING AND RECHARING</a> › <span>E5010 STARTING AND RECHARING - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E5010</span> STARTING AND RECHARING - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5010 STARTING AND RECHARING &gt; E5010 STARTING AND RECHARING - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fDbl/en/#/223002557">https://sloeber94.github.io/elrnDB-fDbl/en/#/223002557</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER</p><h2>Functional description</h2><p>A line (50) leaves the ignition switch <strong>H01</strong> from pin 3 connector A coming directly from the battery. With the ignition key in the (AVV) position, the starter motor <strong>A20</strong> solenoid winding is supplied at pin C.</p><p>Pin A of the starter motor receives the voltage coming directly from the battery <strong>A01 connector B.</strong></p><p>The direct current produced by the alternator <strong>A10</strong> (pin B+) is sent to recharge the battery <strong>A01</strong> , passing through the motor <strong>A20</strong> pin B. When the alternator does not turn and therefore does not recharge the battery, it sends an earth signal from pin D+ to the body computer <strong>M01</strong> pin 19 of connector C. This controls the lighting up of the &#x27;battery recharging&#x27; warning light in the instrument panel <strong>E50</strong> from pins 5 and 6 of connector D (CAN line).</p><p>When the engine has been started up, this signal becomes 12 V and the warning light therefore goes out.</p><p>The body computer and the instrument panel communicate with one another via pins 5 and 6 connector D of the computer and pins 9 and 8 connector A of the panel.</p><p>The body computer can be supplied via pin 11 connector E (supply controlled by the ignition) and pin A connector C (direct supply) of the junction unit <strong>B02</strong> . There is a protective fuse F1 for the direct supply located in the junction unit <strong>B01</strong> .</p><p>These lines also supply the instrument panel <strong>E50 via two lines protected by fuses F37 and F53 of junction unit B02 and enter the panel at pins 1 and 3 connector A.</strong></p><p>Pins 8 and 9 connector D of the body computer are connected to earth.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fDbl/en/">https://sloeber94.github.io/elrnDB-fDbl/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

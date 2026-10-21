@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS · Fiat DOBLÒ</title>
+<meta name="description" content="system description. all engines; all production periods. Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5505 INSTRUMENT/GUAGE ELECTRICAL WIRING &gt; Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat DOBLÒ workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2582268.html">Descriptions</a> › <a href="2582337.html">55 ELECTRICAL EQUIPMENT</a> › <a href="2582338.html">5505 INSTRUMENT/GUAGE ELECTRICAL WIRING</a> › <span>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</span></nav>
+<h1>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5505 INSTRUMENT/GUAGE ELECTRICAL WIRING &gt; Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fDbl/en/#/2585417">https://sloeber94.github.io/elrnDB-fDbl/en/#/2585417</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>FUNCTIONS</h3><p>&#x27;VeNICE&#x27; stands for Vehicle Network
+Integration Component Electronics.</p><p>For this reason, &#x27;VeNICE&#x27; is a powerful software and hardware solution which efficiently manages the resources in the vehicle allowing:</p><ul><li>data to be shared between the various ECUs;</li><li>several ECUs to be integrated in a network;</li><li>high data exchange speed in the network;</li><li>cost-effective solutions, since the number of wiring
+harnesses and connectors are considerably reduced in the vehicle;</li><li>a higher standard in terms of quality and reliability.</li></ul><p>The conventional &#x27;VeNICE&#x27; architecture is
+shown  in the following figure.</p><figure class="photo"><img class="zoomable" src="../../../media/2020332.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>FUNCTIONS</h3><p>In its most comprehensive configuration, the VeNICE system consists of the following parts:</p><ul><li>engine bay control unit (1) (electromechanical)</li><li>facia node (2) (electromechanical/electronic)</li><li>instrument panel node (3) (electronic)</li><li>control panel node (4) (electromechanical and electronic)</li><li>wiring (5)</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SYSTEM ARCHITECTURE IN GENERAL</h3><p>The various &#x27;Node&#x27; ECUs in the
+system are connected to the CAN  (17) via communication interfaces
+called &#x27;Transceivers&#x27;.</p><p>The interfaces are built into the ECUs and
+form gates for sending/reading data on the CAN (12) or on the serial
+lines.</p><figure class="photo"><img class="zoomable" src="../../../media/2020333.jpg" alt="" loading="lazy"></figure><p>1 (NBC) Body Computer Node
+	2 Control panel
+	3 Steering wheel stalk unit
+	4 Brake control unit (ABS)
+	5. ABS sensors
+	6. Instrument Panel Node (NQS)
+	7. Engine Control Node (NCM)
+	8 NCM actuators
+	9 NCM sensors
+	10 Radio Node (NRR)
+	11. Examiner Tester Node (NSD)
+	12. Controller Area Network (CAN)
+	13. Serial line</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SYSTEM ARCHITECTURE IN GENERAL</h3><p>The following figure illustrates
+the communication interface:</p><figure class="photo"><img class="zoomable" src="../../../media/2020334.jpg" alt="" loading="lazy"></figure><p>1 NODE electronic unit
+	2 Microprocessor
+	3 Communication interface
+	4 CAN network (double)</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SYSTEM ARCHITECTURE IN GENERAL</h3><p>System designers assign control
+functions to the Body Computer in the VeNICE architecture (see relevant
+ assembly for details on the NBC functions).</p><p>The additional Body Computer functions provide information on:</p><ul><li>network activity status;</li><li>the functional failure status of individual node ECUs;</li><li>CAN failure.</li></ul><p>The Body Computer node &#x27;wakes the system
+up&#x27; when the ignition key is turned to MAR.</p><p>In the event of an NBC failure, the network
+is woken up by the Instrument panel node (NQS) which intervenes
+only if the system is not woken up by the Body Computer for a certain
+time after the key is turned to MAR to prevent network conflicts.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>OPERATING PRINCIPLES</h3><p>Each &#x27;Node&#x27; ECU processes the
+various signals from the respective sensors in order to manage themselves
+and the other ECUs.</p><p>For greater clarity, the following drawings
+illustrates a possible data sharing procedure between units connected
+in a network.</p><figure class="photo"><img class="zoomable" src="../../../media/2020335.jpg" alt="" loading="lazy"></figure><p>1 Body Computer node
+	2 Engine Control Node
+	3 Radio Receiver Node
+	4 Instrument Panel Node
+	5. Serial Line
+	6. CAN (double)
+	A. Send/Read message
+	B. Check message
+	C. Accept message
+	D. Create message</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>OPERATING PRINCIPLES</h3><p>Example:</p><ul><li>The Engine control node (2) sends an rpm signal to the
+network (6).</li><li>The Instrument panel node (4) reads the data and uses
+it to control the rev gauge to inform the driver of the engine rpm.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DATA TRANSMISSION PRIORITY</h3><p>The VeNICE system employs a &#x27;CSMA/CD&#x27;
+- Carrier Sense Multiple Access / Collision Avoiding - mechanism
+to allow several &#x27;Node&#x27; ECUs simultaneous  access to the network
+(double wire).</p><p>The CAN system is used because various ECUs
+interface and consequently a high number of signals is managed.
+A double copper wire CAN is therefore used. One wire is associated
+to the high level (H) and the other to the low level (L). The combined
+use of two wires and differential signals offers very strong signal
+ communication even in environments with high electromagnetic interference.</p><p>The maximum number of distinct IDs for the
+CAN standard is 2032.</p><p>The following diagram shows simultaneous
+data transmission  in the network to illustrate the transmission
+priority mechanism between nodes.</p><figure class="photo"><img class="zoomable" src="../../../media/2020336.jpg" alt="" loading="lazy"></figure><p>1 Electronic unit &#x27;A&#x27;
+	2 Electronic unit &#x27;B&#x27;
+	3 Information on network</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DATA TRANSMISSION PRIORITY</h3><p>As shown in the diagram, nodes
+(1) and (2) simultaneously  send the same message to point (D).</p><p>Nodes (1) and (2) present a mismatching
+byte in point (E). In this condition, node (1) modifies the value
+of the node (2) byte taking it to a lower level.</p><p>Node (2) acknowledges that its byte has
+been changed and that another node with higher priority is transmitting.
+It immediately stops sending and stands by until node (1) frees
+the line.</p><p>It is important to note that while acknowledging
+transmitting  priority, node (1) sends its message without interruption.</p><p>5505A, MULTIFUNCTION COMPONENTS</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fDbl/en/">https://sloeber94.github.io/elrnDB-fDbl/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

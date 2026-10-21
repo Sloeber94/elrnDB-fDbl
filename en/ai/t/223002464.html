@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION · Fiat DOBLÒ</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER and MY 2005. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat DOBLÒ workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2582819.html">Electrical equipment</a> › <a href="2582820.html">1 ELECTRICAL FUNCTIONS</a> › <a href="2583080.html">E40 INSTRUMENT PANEL</a> › <a href="223002462.html">E4010 INSTRUMENT PANEL</a> › <span>E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E4010</span> INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER and MY 2005</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fDbl/en/#/223002464">https://sloeber94.github.io/elrnDB-fDbl/en/#/223002464</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 16v; production: da 12/03; only with equipment: BIPOWER and MY 2005</p><p>An ignition operated power supply (INT) from instrument E50 reaches pin 1 of connector A through body computer M01, pin 31 connector F, from a line protected by fuse F37 of under-dashboard junction unit B02.</p><p>Instrument E50 is also supplied directly from the battery - pin 3 of connector A - via the body computer, pin 3 of connector D, from a line protected by fuse F53 contained in under-dashboard junction unit B02.</p><p>The power supply to body computer M01 reaches pin 9 connector XY through under-dashboard junction unit B02 (pin 11 connector E) from ignition switch H01 (INT) and pin 18 of connector XY of body computer M01 through under-dashboard junction unit, directly from a battery protected by fuse F1 located inside engine compartment junction unit B01.</p><p>Pins 8 and 9 of connector D of the body computer are earthed.</p><p>Body computer M01 and control panel E50 communicate with one another to exchange information on the correct operation of the devices present in the vehicle respectively from pins 5 and 6 of connector D and pins 9 and 8 of connector A.</p><p>Instrument panel E50 is also connected to earth via body computer M01 from pin 2 of connector A.</p><p>Signals from handbrake switch I40 and brake fluid level sensor K25 are received from pin 14 connector A and pin 18 connector C of M01 respectively.</p><p>Pins 4 and 15 of connector A of the body computer receives signals from the fuel level gauge located in the unit of pump N40: these signals, sent via the CAN network to the instrument panel, are processed by an internal electronic devices that manages the level gauge and reserve warning light in the instrument.</p><p>Speedometer sensor K84 sends its signal directly to body computer M01 at pin 17 connector C. The signals are sent via the CAN line to instrument panel E50, to manage all information on vehicle speed, and to engine management control unit M10 to ensure its correct operation.</p><p>Engine management control unti M10, pin 8 connector A receives a minimum engine oil pressure signal from sensor K30. This signal reaches instrument panel E50 via the CAN to make it possible to activate the warning light.</p><p>In the same way, information on engine coolant temperature leaves sensor K36 and reaches engine control unit M10 at pins 54 and 62 of connector B. From there, it is then sent to instrument panel E50 to manage the gauge signal and also the excessive coolant temperature warning light, if necessary.</p><p>RPM sensor K46 sends an engine rpm signal to engine control unit M10 at pins 53, 67 and 77 (screening) connector B; the control unit informs instrument panel E50 via the CAN network, which makes it possible to display the engine rpm.</p><p>The information travels through the C-CAN line from pins 6 and 32 of connector A of M10 to pins 36 and 37 connector C of body computer M01.</p><p>A headlamp alignment corrector control signal leaves pin 5 connector A of the instrument panel.</p><p><a href="223002195.html">See E3080 HEADLAMP AGLINMENT CORRECTOR</a></p><p>Signals are received from the AIR BAG control unit at pins 13, 14 and 15 of connector B for correct management of the various warning lights.</p><p><a href="223003403.html">See E7030 AIRBAG</a></p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="223002195.html">E3080 HEADLAMP AGLINMENT CORRECTOR</a> <span class="meta">chapter (index of subtopics) · engines: 1.2 8v, 1.6 16v, 1.3 JTD 16V, 1.9 JTD 8V, 1.9 DIESEL; production: From 10/2000, Up to 10/2000</span></li><li><a href="223003403.html">E7030 AIRBAG</a> <span class="meta">chapter (index of subtopics) · engines: 1.2 8v, 1.6 16v, 1.3 JTD 16V, 1.9 JTD 8V, 1.9 DIESEL; production: From 10/2000, Up to 10/2000</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fDbl/en/">https://sloeber94.github.io/elrnDB-fDbl/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>
